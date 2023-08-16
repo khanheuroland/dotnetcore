@@ -8,13 +8,13 @@ Install-Package Swashbuckle.AspNetCore -Version 6.2.3
 ```
 
 ### Step 2 ###
-Configure Service in Startup.cs
+Register Service in Startup.cs
 ```
 services.AddSwaggerGen();
 ```
 
 ### Step 3 ###
-Setup in configure Startup.cs
+Setup Swagger middleware in Startup.cs
 ```
   app.UseSwagger();
   app.UseSwaggerUI(c =>
